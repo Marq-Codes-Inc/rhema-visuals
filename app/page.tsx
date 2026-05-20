@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuredPackages.map((pkg) => (
-            <PackageCard key={pkg.name} package={pkg} featured />
+            <PackageCard key={pkg.name} package={pkg} />
           ))}
         </div>
         <div className="flex justify-end mt-10">
