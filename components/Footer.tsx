@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-subtle text-center text-xs text-secondary">
-          <p>© {currentYear} Rhema Visuals LTD. All rights reserved.</p>
+          <p>© {currentYear} Rhema Visuals Ltd. All rights reserved.</p>
         </div>
       </Container>
     </footer>
