@@ -4,10 +4,7 @@ import { getAllPackages } from "@/lib/packages";
 import Link from "next/link";
 import { Check } from "lucide-react";
 
-const categoryDetails: Record<
-  string,
-  { label: string; intro: string }
-> = {
+const categoryDetails: Record<string, { label: string; intro: string }> = {
   proposal: {
     label: "Proposal Packages",
     intro:
@@ -16,7 +13,7 @@ const categoryDetails: Record<
   kukyala: {
     label: "Kukyaala Packages",
     intro:
-      "Why not place your Kukyaala Photography and Videography in the hands of the best in Kampala.\n\nWe have a range of Kukyaala package deals which start at only USH 1M and we like to think of these packages as inexpensive. _ With honest pricing and a variety of incredible package options, we make it easy to deliver your work entirely unique to you.",
+      "Why not place your Kukyaala Photography and Videography in the hands of the best in Kampala.\n\nWe have a range of Kukyaala package deals which start at only USH 1M and we like to think of these packages as inexpensive. With honest pricing and a variety of incredible package options, we make it easy to deliver your work entirely unique to you.",
   },
   kuhingira: {
     label: "Kwanjula & Kuhingira Packages",
@@ -26,7 +23,7 @@ const categoryDetails: Record<
   wedding: {
     label: "Wedding Packages",
     intro:
-      "Our wedding packages are designed to provide you with everything you need to create lasting memories of your special day. Be the envy of your friends and tie the knot in style.\n\nExplore Our easy & romantic wedding options! Our ALL-INCLUSIVE WEDDING PACKAGES will offer you a wedding that is Unforgettable in Kampala.",
+      "Our wedding packages are designed to provide you with everything you need to create lasting memories of your special day. Be the envy of your friends and tie the knot in style.\n\nExplore Our easy & romantic wedding options! Our ALL-IN-CLUSIVE WEDDING PACKAGES will offer you a wedding that is Unforgettable in Kampala.",
   },
   "portrait-indoor": {
     label: "Portrait Session – Indoor (Studio)",
@@ -86,7 +83,7 @@ export default function PackagesPage() {
   );
 
   return (
-    <Container className="py-12 md:py-20 max-w-6xl">
+    <Container className="py-12 md:py-20 max-w-5xl">
       {/* Page heading */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-brand-black">
@@ -98,7 +95,7 @@ export default function PackagesPage() {
       </div>
 
       {/* Category sections */}
-      <div className="space-y-20">
+      <div className="space-y-24">
         {categoryOrder.map((cat) => {
           const packages = grouped[cat];
           if (!packages || packages.length === 0) return null;
@@ -108,18 +105,18 @@ export default function PackagesPage() {
           };
 
           return (
-            <section key={cat}>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
+            <section key={cat} className="scroll-mt-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-3">
                 {label}
               </h2>
               {intro && (
-                <p className="text-secondary whitespace-pre-line mb-8 max-w-3xl">
+                <p className="text-secondary whitespace-pre-line mb-8 max-w-3xl leading-relaxed">
                   {intro}
                 </p>
               )}
 
-              {/* Grid of package cards */}
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Stack layout: cleanly handles horizontal desktop layout without compression */}
+              <div className="flex flex-col gap-8">
                 {packages.map((pkg) => (
                   <PackageCard key={pkg.name} package={pkg} />
                 ))}
@@ -130,12 +127,12 @@ export default function PackagesPage() {
       </div>
 
       {/* Extra Epic Services */}
-      <section className="mt-20 border-t border-subtle pt-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
+      <section className="mt-24 border-t border-subtle pt-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-3">
           Extra Epic Services
         </h2>
-        <p className="text-secondary mb-8 max-w-2xl">
-          Don’t settle for mediocre Event when you aim to exude excellence. Our
+        <p className="text-secondary mb-8 max-w-2xl leading-relaxed">
+          Don’t settle for mediocre Events when you aim to exude excellence. Our
           Extra Services are Fairly Priced to bring out the best in your
           Wedding.
         </p>
@@ -143,7 +140,7 @@ export default function PackagesPage() {
           {extraServices.map((service) => (
             <div
               key={service.label}
-              className="flex items-center justify-between bg-card border border-subtle rounded-xl px-5 py-4"
+              className="flex items-center justify-between bg-card border border-subtle rounded-xl px-5 py-4 shadow-sm"
             >
               <span className="text-brand-black font-medium text-sm flex items-center gap-2">
                 <Check className="w-4 h-4 text-green-600 shrink-0" />
@@ -158,12 +155,12 @@ export default function PackagesPage() {
       </section>
 
       {/* Custom contact link */}
-      <div className="mt-16 text-center border-t border-subtle pt-10">
-        <p className="text-secondary">
+      <div className="mt-20 text-center border-t border-subtle pt-10">
+        <p className="text-secondary text-base">
           Need something custom?{" "}
           <Link
             href="/contact"
-            className="text-brand-orange hover:underline font-medium"
+            className="text-brand-orange hover:underline font-semibold"
           >
             Contact us
           </Link>{" "}

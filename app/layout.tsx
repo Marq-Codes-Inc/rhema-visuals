@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ScrollToTop from '@/components/ScrollToTop';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Inter, Playfair_Display } from 'next/font/google';

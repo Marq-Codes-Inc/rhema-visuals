@@ -1,57 +1,53 @@
-/* gallery/page.tsx */
 'use client';
+
 import { useState } from 'react';
-import Image from 'next/image';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
+import FancyboxMasonry from '@/components/FancyboxMasonry';
 import { Container } from '@/components/ui/Container';
 
-type Category = 'weddings' | 'portraits' | 'proposals' | 'commercial'| 'corporate';
+type Category = 'weddings' | 'portraits' | 'proposals' | 'commercial' | 'corporate';
 
-const galleryData: Record<Category, { src: string; alt: string }[]> = {
+const galleryData: Record<Category, { src: string; alt: string; width: number; height: number }[]> = {
   weddings: [
-    { src: '/images/wedding1.jpg', alt: 'Wedding ceremony' },
-    { src: '/images/wedding2.jpg', alt: 'Bridal portrait' },
-    { src: '/images/wedding3.jpg', alt: 'First dance' },
-    { src: '/images/wedding4.jpg', alt: 'Reception details' },
-    { src: '/images/wedding5.jpg', alt: 'Wedding ceremony' },
-    { src: '/images/wedding6.jpg', alt: 'Bridal portrait' },
-    { src: '/images/wedding7.jpg', alt: 'First dance' },
-    { src: '/images/wedding8.jpg', alt: 'Reception details' },
-    { src: '/images/wedding9.jpg', alt: 'Reception details' }
+    { src: '/images/wedding1.jpg', alt: 'Wedding ceremony', width: 1200, height: 800 },
+    { src: '/images/wedding2.jpg', alt: 'Bridal portrait', width: 800, height: 1200 },
+    { src: '/images/wedding3.jpg', alt: 'First dance', width: 1200, height: 800 },
+    { src: '/images/wedding4.jpg', alt: 'Reception details', width: 1600, height: 900 },
+    { src: '/images/wedding5.jpg', alt: 'Wedding ceremony', width: 1200, height: 800 },
+    { src: '/images/wedding6.jpg', alt: 'Bridal portrait', width: 800, height: 1200 },
+    { src: '/images/wedding7.jpg', alt: 'First dance', width: 1200, height: 800 },
+    { src: '/images/wedding8.jpg', alt: 'Reception details', width: 1600, height: 900 },
   ],
   portraits: [
-    { src: '/images/portrait1.jpg', alt: 'Studio portrait' },
-    { src: '/images/portrait2.jpg', alt: 'Outdoor portrait' },
-    { src: '/images/portrait3.jpg', alt: 'Black and white' },
-    { src: '/images/portrait4.jpg', alt: 'Environmental portrait' },
-    { src: '/images/portrait5.jpg', alt: 'Studio portrait' },
-    { src: '/images/portrait6.jpg', alt: 'Outdoor portrait' }
+    { src: '/images/portrait1.jpg', alt: 'Studio portrait', width: 1200, height: 800 },
+    { src: '/images/portrait2.jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
+    { src: '/images/portrait3.jpg', alt: 'Black and white', width: 1200, height: 800 },
+    { src: '/images/portrait4.jpg', alt: 'Environmental portrait', width: 1600, height: 900 },
+    { src: '/images/portrait5.jpg', alt: 'Studio portrait', width: 1200, height: 800 },
+    { src: '/images/portrait6.jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
   ],
   proposals: [
-    { src: '/images/proposal1.jpg', alt: 'Proposal' },
-    { src: '/images/proposal2.jpg', alt: 'Proposal' },
-    { src: '/images/proposal3.jpg', alt: 'Proposal' },
-    { src: '/images/proposal4.jpg', alt: 'Proposal' },
-    { src: '/images/proposal5.jpg', alt: 'Proposal' },
-    { src: '/images/proposal6.jpg', alt: 'Proposal' },
+    { src: '/images/proposal1.jpg', alt: 'Proposal', width: 1200, height: 800 },
+    { src: '/images/proposal2.jpg', alt: 'Proposal', width: 1200, height: 800 },
+    { src: '/images/proposal3.jpg', alt: 'Proposal', width: 800, height: 1200 },
+    { src: '/images/proposal4.jpg', alt: 'Proposal', width: 1600, height: 900 },
+    { src: '/images/proposal5.jpg', alt: 'Proposal', width: 1200, height: 800 },
+    { src: '/images/proposal6.jpg', alt: 'Proposal', width: 1200, height: 800 },
   ],
   commercial: [
-    { src: '/images/commercial1.jpg', alt: 'Product shoot' },
-    { src: '/images/commercial2.jpg', alt: 'Fashion lookbook' },
-    { src: '/images/commercial3.jpg', alt: 'Food photography' },
-    { src: '/images/commercial4.jpg', alt: 'Architecture' },
-    { src: '/images/commercial5.jpg', alt: 'Architecture' },
-    { src: '/images/commercial6.jpg', alt: 'Architecture' },
-    
+    { src: '/images/commercial1.jpg', alt: 'Product shoot', width: 1200, height: 800 },
+    { src: '/images/commercial2.jpg', alt: 'Fashion lookbook', width: 800, height: 1200 },
+    { src: '/images/commercial3.jpg', alt: 'Food photography', width: 1200, height: 800 },
+    { src: '/images/commercial4.jpg', alt: 'Architecture', width: 1600, height: 900 },
+    { src: '/images/commercial5.jpg', alt: 'Architecture', width: 1200, height: 800 },
+    { src: '/images/commercial6.jpg', alt: 'Architecture', width: 1600, height: 900 },
   ],
   corporate: [
-    { src: '/images/corporate1.jpg', alt: 'Product shoot' },
-    { src: '/images/corporate2.jpg', alt: 'Fashion lookbook' },
-    { src: '/images/corporate3.jpg', alt: 'Food photography' },
-    { src: '/images/corporate4.jpg', alt: 'Architecture' },
-    { src: '/images/corporate5.jpg', alt: 'Food photography' },
-    { src: '/images/corporate6.jpg', alt: 'Architecture' }
+    { src: '/images/corporate1.jpg', alt: 'Product shoot', width: 1200, height: 800 },
+    { src: '/images/corporate2.jpg', alt: 'Fashion lookbook', width: 800, height: 1200 },
+    { src: '/images/corporate3.jpg', alt: 'Food photography', width: 1200, height: 800 },
+    { src: '/images/corporate4.jpg', alt: 'Architecture', width: 1600, height: 900 },
+    { src: '/images/corporate5.jpg', alt: 'Food photography', width: 1200, height: 800 },
+    { src: '/images/corporate6.jpg', alt: 'Architecture', width: 1600, height: 900 },
   ],
 };
 
@@ -65,7 +61,6 @@ const categories: { id: Category; label: string }[] = [
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('weddings');
-  const [lightboxIndex, setLightboxIndex] = useState(-1);
   const currentPhotos = galleryData[activeCategory];
 
   return (
@@ -95,30 +90,8 @@ export default function GalleryPage() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-        {currentPhotos.map((photo, idx) => (
-          <div
-            key={idx}
-            className="group relative aspect-4/3 overflow-hidden cursor-pointer bg-black/5 dark:bg-white/5"
-            onClick={() => setLightboxIndex(idx)}
-          >
-            <Image
-              src={photo.src}
-              alt={photo.alt}
-              fill
-              className="object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-90"
-              unoptimized
-            />
-          </div>
-        ))}
-      </div>
-
-      <Lightbox
-        open={lightboxIndex >= 0}
-        index={lightboxIndex}
-        close={() => setLightboxIndex(-1)}
-        slides={currentPhotos}
-      />
+      <FancyboxMasonry photos={currentPhotos} />
     </Container>
   );
 }
+

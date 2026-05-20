@@ -296,11 +296,13 @@ export function getAllPackages(): PackageType[] {
 }
 
 export function getFeaturedPackages(): PackageType[] {
-  return allPackages.filter(
-    (p) =>
-      p.name === "Wedding Gold" ||
-      p.name === "Kwanjula Gold" ||
-      p.name === "Kukyaala Gold" ||
-      p.name === "Corporate Essentials"
-  );
+  // Returns exactly the top 3 targeted highlight packages
+  return allPackages
+    .filter(
+      (p) =>
+        p.name === "Wedding Gold" ||
+        p.name === "Kwanjula Gold" ||
+        p.name === "Kukyaala Gold"
+    )
+    .slice(0, 3);
 }

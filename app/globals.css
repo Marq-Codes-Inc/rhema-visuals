@@ -142,3 +142,20 @@ nav.fixed-nav {
 img, video, iframe {
   border-radius: 0;
 }
+
+.fancybox__toolbar .f-button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.fancybox__thumbs {
+  display: none !important;
+}
+
+.fancybox__caption {
+  display: none !important;
+}
+
+

@@ -58,26 +58,33 @@ export default function Home() {
       </section>
 
       {/* Packages Section */}
-      <Container>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-brand-black">
-            Our <span className="text-brand-orange">Packages</span>
-          </h2>
-          <p className="text-secondary max-w-2xl mx-auto">
-            Choose the perfect plan for your next project.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {featuredPackages.map((pkg) => (
-            <PackageCard key={pkg.name} package={pkg} />
-          ))}
-        </div>
-        <div className="flex justify-end mt-10">
-          <Link href="/packages">
-            <Button variant="outline" size="md">See All Packages →</Button>
-          </Link>
-        </div>
-      </Container>
+      <section className="scroll-mt-24">
+        <Container className="max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-brand-black">
+              Our <span className="text-brand-orange">Packages</span>
+            </h2>
+            <p className="text-secondary max-w-2xl mx-auto">
+              Choose the perfect plan for your next project.
+            </p>
+          </div>
+
+          {/* Vertical Stack: Perfect for desktop side-by-side & mobile top-down layouts */}
+          <div className="flex flex-col gap-8">
+            {featuredPackages.map((pkg) => (
+              <PackageCard key={pkg.name} package={pkg} />
+            ))}
+          </div>
+
+          <div className="flex justify-center md:justify-end mt-12">
+            <Link href="/packages">
+              <Button variant="outline" size="md" className="w-full md:w-auto">
+                See All Packages →
+              </Button>
+            </Link>
+          </div>
+        </Container>
+      </section>
 
       {/* Video Carousel Section */}
       <section className="bg-black/5 dark:bg-white/5 py-16 md:py-24 border-y border-subtle">
@@ -94,10 +101,12 @@ export default function Home() {
 
       {/* Contact CTA */}
       <Container>
-        <div className="text-center py-12 md:py-20 rounded-md border border-subtle bg-card">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">Ready to Capture your beautiful moments?</h2>
+        <div className="text-center py-12 md:py-20 px-6 rounded-2xl border border-subtle bg-card shadow-sm">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-brand-black max-w-2xl mx-auto tracking-tight">
+            Ready to capture your beautiful moments?
+          </h2>
           <Link href="/contact">
-            <Button size="lg">GET IN TOUCH</Button>
+            <Button size="lg" className="w-full sm:w-auto px-8">GET IN TOUCH</Button>
           </Link>
         </div>
       </Container>
