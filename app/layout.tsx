@@ -5,13 +5,15 @@ import Footer from '@/components/Footer';
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import ScrollToTop from '@/components/ScrollToTop';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Parisienne } from 'next/font/google';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
+import CategoryScrollButtons from '@/components/CategoryScrollButtons';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const playfair = Playfair_Display({
+const parisienne = Parisienne({
   subsets: ['latin'],
   variable: '--font-display',
-  weight: ['400', '600', '700'],
+  weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -41,7 +43,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${parisienne.variable}`}
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -64,6 +70,8 @@ export default function RootLayout({
           </main>
           <Footer />
           <ScrollToTop />
+          <WhatsAppIcon />
+          <CategoryScrollButtons />
         </ThemeProvider>
       </body>
     </html>

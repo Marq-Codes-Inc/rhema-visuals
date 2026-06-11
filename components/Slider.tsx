@@ -6,24 +6,21 @@ import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 
 const heroImages = [
-  '/images/hero1.jpg',
-  '/images/hero2.jpg',
-  '/images/hero3.jpg',
+  '/images/hero/hero (1).jpg',
+  '/images/hero/hero (2).jpg',
+  '/images/hero/hero (3).jpg',
 ];
 
 export default function Slider() {
-  // 1. Grab the emblaApi instance from the hook
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000, stopOnInteraction: false })
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  // 2. Click handler to jump to a specific slide
   const scrollTo = useCallback((index: number) => {
     if (emblaApi) emblaApi.scrollTo(index);
   }, [emblaApi]);
 
-  // 3. Update the active dot index when the carousel changes slides
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
@@ -64,7 +61,7 @@ export default function Slider() {
         </div>
       </div>
 
-      {/* 4. Pagination Dots Overlay */}
+      {/* Pagination Dots Overlay */}
       <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {heroImages.map((_, idx) => (
           <button

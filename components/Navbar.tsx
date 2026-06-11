@@ -67,7 +67,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <div className="relative w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
             <Image
-              src="/images/rhema-visuals-logo.png"
+              src="/images/logo/rhema-visuals-logo.png"
               alt="Rhema Visuals"
               width={200}
               height={200}

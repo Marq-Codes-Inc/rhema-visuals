@@ -1,20 +1,19 @@
 import { PackageType } from "@/components/PackageCard";
 
 export const allPackages: PackageType[] = [
-  // -------------------------------------------------
   // PROPOSAL
-  // -------------------------------------------------
   {
-    name: "Proposal Silver",
-    price: 800000,
-    description: "Discreet coverage of the big moment.",
+    name: "Proposal Platinum",
+    price: 1800000,
+    description: "Full planning assistance and drone footage.",
     features: [
-      "1 Photographer",
-      "60+ edited photos",
-      "Online gallery",
-      "Print release",
+      "2 Photographers",
+      "Drone footage",
+      "Full proposal video",
+      "120+ photos",
+      "Same‑day preview",
     ],
-    image: "/images/proposal-silver.jpg",
+    image: "/images/packages/proposal/proposal-platinum.jpg",
     category: "proposal",
   },
   {
@@ -28,60 +27,27 @@ export const allPackages: PackageType[] = [
       "30‑sec teaser",
       "Online gallery",
     ],
-    image: "/images/proposal-gold.jpg",
+    image: "/images/packages/proposal/proposal-gold.jpg",
     category: "proposal",
   },
-  {
-    name: "Proposal Platinum",
-    price: 1800000,
-    description: "Full planning assistance and drone footage.",
+    {
+    name: "Proposal Silver",
+    price: 800000,
+    description: "Discreet coverage of the big moment.",
     features: [
-      "2 Photographers",
-      "Drone footage",
-      "Full proposal video",
-      "120+ photos",
-      "Same‑day preview",
+      "1 Photographer",
+      "60+ edited photos",
+      "Online gallery",
+      "Print release",
     ],
-    image: "/images/proposal-platinum.jpg",
+    image: "/images/packages/proposal/proposal-silver.jpg",
     category: "proposal",
   },
 
-  // -------------------------------------------------
   // KUKYALA
-  // -------------------------------------------------
-  {
-    name: "Kukyaala Silver",
-    price: 1000000,
-    description:
-      "This is our standard Photography Only Package. If Your Attention is on Photos only.",
-    features: [
-      "1 Photographer",
-      "150+ Photos in a Photobook",
-      "2 Photo Boards (1A2, 1A3)",
-      "4 Months BackUp",
-    ],
-    image: "/images/kukyaala-silver.jpg",
-    category: "kukyala",
-  },
-  {
-    name: "Kukyaala Gold",
-    price: 1900000,
-    description:
-      "This is our Most Popular Package. If Your Attention is on Both Photos & Video.",
-    features: [
-      "Everything in Silver Package",
-      "200+ Photos in a Photobook",
-      "1 Videographer",
-      "Beautiful Short Video",
-      "6 Months Files Back up",
-    ],
-    image: "/images/kukyaala-gold.jpg",
-    category: "kukyala",
-    popular: true,
-  },
   {
     name: "Kukyaala Platinum",
-    price: 2700000,
+    price: 2500000,
     description:
       "Planning a Slightly Bigger Kukyaala? Full Coverage of Event.",
     features: [
@@ -91,33 +57,64 @@ export const allPackages: PackageType[] = [
       "Your Kukyala Day Vlog",
       "Beautiful Short Video + Full Video",
     ],
-    image: "/images/kukyaala-platinum.jpg",
+    image: "/images/packages/kukyala/kukyaala-platinum.jpg",
+    category: "kukyala",
+  },
+  {
+    name: "Kukyaala Gold",
+    price: 1800000,
+    description:
+      "This is our Most Popular Package. If Your Attention is on Both Photos & Video.",
+    features: [
+      "Everything in Silver Package",
+      "200+ Photos in a Photobook",
+      "1 Videographer",
+      "Beautiful Short Video",
+      "6 Months Files Back up",
+    ],
+    image: "/images/packages/kukyala/kukyaala-gold.jpg",
+    category: "kukyala",
+    popular: true,
+  },
+  {
+    name: "Kukyaala Silver",
+    price: 1200000,
+    description:
+      "This is our standard Photography Only Package. If Your Attention is on Photos only.",
+    features: [
+      "1 Photographer",
+      "150+ Photos in a Photobook",
+      "2 Photo Boards (1A2, 1A3)",
+      "4 Months BackUp",
+    ],
+    image: "/images/packages/kukyala/kukyaala-silver.jpg",
     category: "kukyala",
   },
 
-  // -------------------------------------------------
   // KWANJULA / KUHINGIRA
-  // -------------------------------------------------
   {
-    name: "Kwanjula Silver",
-    price: 3700000,
+    name: "Kwanjula Platinum",
+    price: 7500000,
     description:
-      "This is our standard combo, Get extra Special Attention When you Book with us.",
+      "Unlock the World with this Combo, this Package suits a big Kwanjula.",
     features: [
-      "1 Main photographer & An assistant",
-      "2 Videographers",
-      "250+ Photos in a Photobook",
-      "3 Photo Boards (1A2, 2A3's)",
-      "Beautiful Short Video",
-      "Full Event Video (64GB Flash Drive)",
-      "6 Month Back Up",
+      "2 Photographers",
+      "3 Videographers",
+      "400+ Photos in Two Luxury Photobooks",
+      "2 Luxury Couple Frame Photos",
+      "In Door Mugole Display Tv",
+      "6 Photo Boards (2A2's 4A3's)",
+      "(2) 50\" Outdoor TVs",
+      "Your Kwanjula Day Vlog",
+      "External Drive With All Work",
+      "Full Event Video (Two 64GB Drives)",
     ],
-    image: "/images/kwanjula-silver.jpg",
+    image: "/images/packages/kwanjula/kwanjula-platinum.jpg",
     category: "kuhingira",
   },
   {
     name: "Kwanjula Gold",
-    price: 4990000,
+    price: 4500000,
     description:
       "You get extra services with this Combo, This Happens to be the Most Popular.",
     features: [
@@ -132,50 +129,48 @@ export const allPackages: PackageType[] = [
       "Full Event Video (Two 64GB Drives)",
       "1 Year Files Back Up",
     ],
-    image: "/images/kwanjula-gold.jpg",
+    image: "/images/packages/kwanjula/kwanjula-gold.jpg",
     category: "kuhingira",
     popular: true,
   },
-  {
-    name: "Kwanjula Platinum",
-    price: 8600000,
-    description:
-      "Unlock the World with this Combo, this Package suits a big Kwanjula.",
-    features: [
-      "Everything in Gold Package",
-      "3 Videographers",
-      "400+ Photos in Two Luxury Photobooks",
-      "2 Luxury Couple Frame Photos",
-      "In Door Mugole Display Tv",
-      "6 Photo Boards (2A2's 4A3's)",
-      "(2) 50\" Outdoor TVs",
-      "Your Kwanjula Day Vlog",
-      "External Drive With All Work",
-      "Full Event Video (Two 64GB Drives)",
-    ],
-    image: "/images/kwanjula-platinum.jpg",
-    category: "kuhingira",
-  },
-
-  // -------------------------------------------------
-  // WEDDING
-  // -------------------------------------------------
-  {
-    name: "Wedding Silver",
-    price: 3900000,
+    {
+    name: "Kwanjula Silver",
+    price: 3200000,
     description:
       "This is our standard combo, Get extra Special Attention When you Book with us.",
     features: [
       "1 Main photographer & An assistant",
       "2 Videographers",
-      "250+ Photos in a Bridal Photobook",
+      "250+ Photos in a Photobook",
       "3 Photo Boards (1A2, 2A3's)",
-      "Beautiful Highlight Video",
-      "Full Event Video (64GB Drive)",
-      "Beautiful Social Media Reel",
+      "Beautiful Short Video",
+      "Full Event Video (64GB Flash Drive)",
       "6 Month Back Up",
     ],
-    image: "/images/wedding-silver.jpg",
+    image: "/images/packages/kwanjula/kwanjula-silver.jpg",
+    category: "kuhingira",
+  },
+
+  // WEDDING
+  {
+    name: "Wedding Platinum",
+    price: 7200000,
+    description:
+      "Unlock the World with this Combo, this Package suits a big Wedding. Book Now!",
+    features: [
+      "Everything in Gold Package",
+      "3 Videographers",
+      "450+ Edited Photos",
+      "2 Luxury Couple Frames",
+      "Love Story & Memory Lane Videos",
+      "6 Beautiful Boards (2A2's , 4A3's)",
+      "(2) 50\" Live Feed TVs",
+      "2 Luxury Square Bridal Photobooks",
+      "External Drive With All Work",
+      "Your Wedding Day Vlog (New)",
+      "Private Online Photo Gallery",
+    ],
+    image: "/images/packages/wedding/wedding-platinum.jpg",
     category: "wedding",
   },
   {
@@ -195,38 +190,33 @@ export const allPackages: PackageType[] = [
       "Full Event Video (Two 64GB Drives)",
       "1 Year Files Back Up",
     ],
-    image: "/images/wedding-gold.jpg",
+    image: "/images/packages/wedding/wedding-gold.jpg",
     category: "wedding",
     popular: true,
   },
   {
-    name: "Wedding Platinum",
-    price: 8900000,
+    name: "Wedding Silver",
+    price: 3500000,
     description:
-      "Unlock the World with this Combo, this Package suits a big Wedding. Book Now!",
+      "This is our standard combo, Get extra Special Attention When you Book with us.",
     features: [
-      "Everything in Gold Package",
-      "3 Videographers",
-      "450+ Edited Photos",
-      "2 Luxury Couple Frames",
-      "Love Story & Memory Lane Videos",
-      "6 Beautiful Boards (2A2's , 4A3's)",
-      "(2) 50\" Live Feed TVs",
-      "2 Luxury Square Bridal Photobooks",
-      "External Drive With All Work",
-      "Your Wedding Day Vlog (New)",
-      "Private Online Photo Gallery",
+      "1 Main photographer & An assistant",
+      "2 Videographers",
+      "250+ Photos in a Bridal Photobook",
+      "3 Photo Boards (1A2, 2A3's)",
+      "Beautiful Highlight Video",
+      "Full Event Video (64GB Drive)",
+      "Beautiful Social Media Reel",
+      "6 Month Back Up",
     ],
-    image: "/images/wedding-platinum.jpg",
+    image: "/images/packages/wedding/wedding-silver.jpg",
     category: "wedding",
   },
 
-  // -------------------------------------------------
   // PORTRAIT – INDOOR (STUDIO)
-  // -------------------------------------------------
   {
     name: "Studio Session",
-    price: 500000,
+    price: 250000,
     description: "Professional indoor portrait session in our Kampala studio.",
     features: [
       "1 hour session",
@@ -234,13 +224,14 @@ export const allPackages: PackageType[] = [
       "Online gallery",
       "Print release",
     ],
-    image: "/images/portrait-studio.jpg",
+    image: "/images/packages/Portrait/portrait-studio.jpg",
     category: "portrait-indoor",
   },
+
   // PORTRAIT – OUTDOOR
   {
     name: "Outdoor Session",
-    price: 800000,
+    price: 450000,
     description:
       "Beautiful outdoor portraits at a location of your choice within Kampala.",
     features: [
@@ -250,16 +241,14 @@ export const allPackages: PackageType[] = [
       "Print release",
       "Travel within 10 km included",
     ],
-    image: "/images/portrait-outdoor.jpg",
+    image: "/images/packages/Portrait/portrait-studio.jpg",
     category: "portrait-outdoor",
   },
 
-  // -------------------------------------------------
   // CORPORATE PHOTOSHOOT
-  // -------------------------------------------------
   {
     name: "Corporate Essentials",
-    price: 1800000,
+    price: 750000,
     description:
       "Professional headshots and office lifestyle coverage for teams.",
     features: [
@@ -268,16 +257,14 @@ export const allPackages: PackageType[] = [
       "Online gallery",
       "Commercial use license",
     ],
-    image: "/images/corporate.jpg",
+    image: "/images/Packages/Corporate/corporate (1).jpg",
     category: "corporate",
   },
 
-  // -------------------------------------------------
   // CREATIVE PHOTOSHOOT
-  // -------------------------------------------------
   {
     name: "Creative Story",
-    price: 2500000,
+    price: 500000,
     description:
       "Artistic and conceptual photography for brands or personal projects.",
     features: [
@@ -286,7 +273,7 @@ export const allPackages: PackageType[] = [
       "Creative direction included",
       "Online gallery",
     ],
-    image: "/images/creative-shoot.jpg",
+    image: "/images/Packages/Creative/creative-shoot.jpg",
     category: "creative",
   },
 ];

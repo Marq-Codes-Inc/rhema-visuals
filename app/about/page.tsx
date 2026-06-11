@@ -1,6 +1,6 @@
 import { Container } from '@/components/ui/Container';
 import Image from 'next/image';
-import rehemahImg from '@/public/images/rehemah.jpg';
+import rehemahImg from '@/public/images/team/rehemah.jpg';
 
 export default function AboutPage() {
   return (
