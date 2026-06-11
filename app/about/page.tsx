@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-3 prose prose-invert prose-lg text-secondary space-y-4 leading-relaxed">
             <p>
-              Hi, I’m <strong className="text-brand-black">Rehemah Namaganda</strong> the heart and eyes behind Rhema Visuals. 
+              Hi, I’m <strong className="text-brand-black">Rehema Namaganda</strong> the heart and eyes behind Rhema Visuals. 
               Photography found me long before I ever picked up a camera. I’ve always been captivated by the way light dances on a baby’s lashes, 
               the quiet tenderness of a family huddled together, and the unspoken joy of two people saying “I do.”
             </p>
