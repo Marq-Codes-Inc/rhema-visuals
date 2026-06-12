@@ -8,10 +8,11 @@ const photos = [
   { src: '/images/gallery/Wedding/wedding (5).jpg', alt: 'Street photography', width: 1200, height: 1200 },
   { src: '/images/gallery/Wedding/wedding (7).jpg', alt: 'Product photography', width: 800, height: 1000 },
   { src: '/images/gallery/Corporate/corporate (6).jpg', alt: 'Product photography', width: 800, height: 1000 },
+  { src: '/images/gallery/Kukyala/kukyala (1).jpg', alt: 'Product photography', width: 800, height: 1000 },
+  { src: '/images/gallery/Wedding/wedding (6).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
+  { src: '/images/gallery/Wedding/wedding (8).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
 ];
 
 export default function Gallery() {
   return <FancyboxMasonry photos={photos} />;
 }
-
-
