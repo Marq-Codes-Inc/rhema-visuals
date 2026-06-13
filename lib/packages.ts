@@ -2,47 +2,47 @@ import { PackageType } from "@/components/PackageCard";
 
 export const allPackages: PackageType[] = [
   // PROPOSAL
-  {
-    name: "Proposal Platinum",
-    price: 1800000,
-    description: "Full planning assistance and drone footage.",
-    features: [
-      "2 Photographers",
-      "Drone footage",
-      "Full proposal video",
-      "120+ photos",
-      "Same‑day preview",
-    ],
-    image: "/images/packages/proposal/proposal-platinum.jpg",
-    category: "proposal",
-  },
-  {
-    name: "Proposal Gold",
-    price: 1200000,
-    description: "Photos + a short cinematic teaser.",
-    features: [
-      "1 Photographer",
-      "1 Videographer",
-      "90+ edited photos",
-      "30‑sec teaser",
-      "Online gallery",
-    ],
-    image: "/images/packages/proposal/proposal-gold.jpg",
-    category: "proposal",
-  },
-    {
-    name: "Proposal Silver",
-    price: 800000,
-    description: "Discreet coverage of the big moment.",
-    features: [
-      "1 Photographer",
-      "60+ edited photos",
-      "Online gallery",
-      "Print release",
-    ],
-    image: "/images/packages/proposal/proposal-silver.jpg",
-    category: "proposal",
-  },
+  // {
+  //   name: "Proposal Platinum",
+  //   price: 1800000,
+  //   description: "Full planning assistance and drone footage.",
+  //   features: [
+  //     "2 Photographers",
+  //     "Drone footage",
+  //     "Full proposal video",
+  //     "120+ photos",
+  //     "Same‑day preview",
+  //   ],
+  //   image: "/images/packages/proposal/proposal-platinum.jpg",
+  //   category: "proposal",
+  // },
+  // {
+  //   name: "Proposal Gold",
+  //   price: 1200000,
+  //   description: "Photos + a short cinematic teaser.",
+  //   features: [
+  //     "1 Photographer",
+  //     "1 Videographer",
+  //     "90+ edited photos",
+  //     "30‑sec teaser",
+  //     "Online gallery",
+  //   ],
+  //   image: "/images/packages/proposal/proposal-gold.jpg",
+  //   category: "proposal",
+  // },
+  // {
+  //   name: "Proposal Silver",
+  //   price: 800000,
+  //   description: "Discreet coverage of the big moment.",
+  //   features: [
+  //     "1 Photographer",
+  //     "60+ edited photos",
+  //     "Online gallery",
+  //     "Print release",
+  //   ],
+  //   image: "/images/packages/proposal/proposal-silver.jpg",
+  //   category: "proposal",
+  // },
 
   // KUKYALA
   {
@@ -241,7 +241,7 @@ export const allPackages: PackageType[] = [
       "Print release",
       "Travel within 10 km included",
     ],
-    image: "/images/packages/Portrait/portrait-studio.jpg",
+    image: "/images/packages/Portrait/portrait-outdoor.jpg",
     category: "portrait-outdoor",
   },
 

@@ -1,5 +1,5 @@
 /* components/VideoEmbed.tsx */
-export default function VideoEmbed({ videoId }: { videoId: string }) {
+export default function VideoEmbed({ videoId = "5OQSzduEdFM" }: { videoId?: string }) {
   return (
     <div className="relative aspect-video w-full overflow-hidden shadow-lg">
       <iframe

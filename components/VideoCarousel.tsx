@@ -3,10 +3,8 @@
 import VideoEmbed from './VideoEmbed';
 
 const videos = [
-  { id: 'dQw4w9WgXcQ', title: 'Wedding Highlight' },
-  { id: '9bZkp7q19f0', title: 'Corporate Event' },
-  { id: 'kJQP7kiw5Fk', title: 'Music Video' },
-  { id: 'CevxZvSJLk8', title: 'Brand Story' },
+  { id: '5OQSzduEdFM', title: 'Kukyala Highlight' }, 
+  { id: 'Xf7VrPq1YcQ', title: 'Thanks Giving Event' },
 ];
 
 export default function VideoCarousel() {
