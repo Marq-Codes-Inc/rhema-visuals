@@ -257,7 +257,7 @@ export const allPackages: PackageType[] = [
       "Online gallery",
       "Commercial use license",
     ],
-    image: "/images/Packages/Corporate/corporate (1).jpg",
+    image: "/images/packages/Corporate/corporate (1).jpg",
     category: "corporate",
   },
 
@@ -273,7 +273,7 @@ export const allPackages: PackageType[] = [
       "Creative direction included",
       "Online gallery",
     ],
-    image: "/images/Packages/Creative/creative-shoot.jpg",
+    image: "/images/packages/Creative/creative-shoot.jpg",
     category: "creative",
   },
 ];
