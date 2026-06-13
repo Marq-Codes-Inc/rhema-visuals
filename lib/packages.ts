@@ -13,7 +13,7 @@ export const allPackages: PackageType[] = [
   //     "120+ photos",
   //     "Same‑day preview",
   //   ],
-  //   image: "/images/packages/proposal/proposal-platinum.jpg",
+  //   image: "/images/packages/Proposal/proposal-platinum.jpg",
   //   category: "proposal",
   // },
   // {
@@ -27,7 +27,7 @@ export const allPackages: PackageType[] = [
   //     "30‑sec teaser",
   //     "Online gallery",
   //   ],
-  //   image: "/images/packages/proposal/proposal-gold.jpg",
+  //   image: "/images/packages/Proposal/proposal-gold.jpg",
   //   category: "proposal",
   // },
   // {
@@ -40,7 +40,7 @@ export const allPackages: PackageType[] = [
   //     "Online gallery",
   //     "Print release",
   //   ],
-  //   image: "/images/packages/proposal/proposal-silver.jpg",
+  //   image: "/images/packages/Proposal/proposal-silver.jpg",
   //   category: "proposal",
   // },
 
@@ -57,8 +57,8 @@ export const allPackages: PackageType[] = [
       "Your Kukyala Day Vlog",
       "Beautiful Short Video + Full Video",
     ],
-    image: "/images/packages/kukyala/kukyaala-platinum.jpg",
-    category: "kukyala",
+    image: "/images/packages/Kukyaala/kukyaala-platinum.jpg",
+    category: "kukyaala",
   },
   {
     name: "Kukyaala Gold",
@@ -72,8 +72,8 @@ export const allPackages: PackageType[] = [
       "Beautiful Short Video",
       "6 Months Files Back up",
     ],
-    image: "/images/packages/kukyala/kukyaala-gold.jpg",
-    category: "kukyala",
+    image: "/images/packages/Kukyaala/kukyaala-gold.jpg",
+    category: "kukyaala",
     popular: true,
   },
   {
@@ -87,8 +87,8 @@ export const allPackages: PackageType[] = [
       "2 Photo Boards (1A2, 1A3)",
       "4 Months BackUp",
     ],
-    image: "/images/packages/kukyala/kukyaala-silver.jpg",
-    category: "kukyala",
+    image: "/images/packages/Kukyaala/kukyaala-silver.jpg",
+    category: "kukyaala",
   },
 
   // KWANJULA / KUHINGIRA
@@ -109,7 +109,7 @@ export const allPackages: PackageType[] = [
       "External Drive With All Work",
       "Full Event Video (Two 64GB Drives)",
     ],
-    image: "/images/packages/kwanjula/kwanjula-platinum.jpg",
+    image: "/images/packages/Kwanjula/kwanjula-platinum.jpg",
     category: "kuhingira",
   },
   {
@@ -129,7 +129,7 @@ export const allPackages: PackageType[] = [
       "Full Event Video (Two 64GB Drives)",
       "1 Year Files Back Up",
     ],
-    image: "/images/packages/kwanjula/kwanjula-gold.jpg",
+    image: "/images/packages/Kwanjula/kwanjula-gold.jpg",
     category: "kuhingira",
     popular: true,
   },
@@ -147,7 +147,7 @@ export const allPackages: PackageType[] = [
       "Full Event Video (64GB Flash Drive)",
       "6 Month Back Up",
     ],
-    image: "/images/packages/kwanjula/kwanjula-silver.jpg",
+    image: "/images/packages/Kwanjula/kwanjula-silver.jpg",
     category: "kuhingira",
   },
 
@@ -170,7 +170,7 @@ export const allPackages: PackageType[] = [
       "Your Wedding Day Vlog (New)",
       "Private Online Photo Gallery",
     ],
-    image: "/images/packages/wedding/wedding-platinum.jpg",
+    image: "/images/packages/Wedding/wedding-platinum.jpg",
     category: "wedding",
   },
   {
@@ -190,7 +190,7 @@ export const allPackages: PackageType[] = [
       "Full Event Video (Two 64GB Drives)",
       "1 Year Files Back Up",
     ],
-    image: "/images/packages/wedding/wedding-gold.jpg",
+    image: "/images/packages/Wedding/wedding-gold.jpg",
     category: "wedding",
     popular: true,
   },
@@ -209,7 +209,7 @@ export const allPackages: PackageType[] = [
       "Beautiful Social Media Reel",
       "6 Month Back Up",
     ],
-    image: "/images/packages/wedding/wedding-silver.jpg",
+    image: "/images/packages/Wedding/wedding-silver.jpg",
     category: "wedding",
   },
 

@@ -50,7 +50,7 @@ const categoryDetails: Record<string, { label: string; intro: string }> = {
 
 const categoryOrder = [
   "proposal",
-  "kukyala",
+  "kukyaala",
   "kuhingira",
   "wedding",
   "portrait-indoor",
