@@ -6,8 +6,8 @@ import { Button } from "./ui/Button";
 import { Menu, X } from "lucide-react";
 
 const categories = [
-  { id: "proposal", label: "Proposal" },
-  { id: "kukyala", label: "Kukyaala" },
+  // { id: "proposal", label: "Proposal" },
+  { id: "kukyaala", label: "Kukyaala" },
   { id: "kuhingira", label: "Kwanjula & Kuhingira" },
   { id: "wedding", label: "Wedding" },
   { id: "portrait-indoor", label: "Portrait (Indoor)" },
