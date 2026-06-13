@@ -16,11 +16,11 @@ const galleryData: Record<Category, { src: string; alt: string; width: number; h
     { src: '/images/gallery/Wedding/wedding (6).jpg', alt: 'Bridal portrait', width: 800, height: 1200 },
     { src: '/images/gallery/Wedding/wedding (7).jpg', alt: 'First dance', width: 1200, height: 800 },
     { src: '/images/gallery/Wedding/wedding (8).jpg', alt: 'Reception details', width: 1600, height: 900 },
-    { src: '/images/gallery/Kukyala/kukyala (11).jpg', alt: 'Product photography', width: 800, height: 1000 },
-    { src: '/images/gallery/Kukyala/kukyala (12).jpg', alt: 'Product photography', width: 800, height: 1000 },
-    { src: '/images/gallery/Kukyala/kukyala (13).jpg', alt: 'Product photography', width: 800, height: 1000 },
-    { src: '/images/gallery/Kukyala/kukyala (14).jpg', alt: 'Product photography', width: 800, height: 1000 },
-    { src: '/images/gallery/Kukyala/kukyala (15).jpg', alt: 'Product photography', width: 800, height: 1000 },
+    { src: '/images/gallery/Kukyaala/kukyaala (11).jpg', alt: 'Product photography', width: 800, height: 1000 },
+    { src: '/images/gallery/Kukyaala/kukyaala (12).jpg', alt: 'Product photography', width: 800, height: 1000 },
+    { src: '/images/gallery/Kukyaala/kukyaala (13).jpg', alt: 'Product photography', width: 800, height: 1000 },
+    { src: '/images/gallery/Kukyaala/kukyaala (14).jpg', alt: 'Product photography', width: 800, height: 1000 },
+    { src: '/images/gallery/Kukyaala/kukyaala (15).jpg', alt: 'Product photography', width: 800, height: 1000 },
   ],
   portraits: [
     { src: '/images/gallery/Portraits/portrait (1).jpg', alt: 'Studio portrait', width: 1200, height: 800 },
@@ -31,7 +31,8 @@ const galleryData: Record<Category, { src: string; alt: string; width: number; h
     { src: '/images/gallery/Portraits/portrait (6).jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
     { src: '/images/gallery/Portraits/portrait (7).jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
     { src: '/images/gallery/Portraits/portrait (8).jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
-
+    { src: '/images/gallery/Portraits/portrait (9).jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
+    { src: '/images/gallery/Portraits/portrait (10).jpg', alt: 'Outdoor portrait', width: 800, height: 1200 },
   ],
   proposals: [
     { src: '/images/gallery/Proposals/proposal (1).jpg', alt: 'Proposal', width: 1200, height: 800 },
@@ -61,7 +62,7 @@ const galleryData: Record<Category, { src: string; alt: string; width: number; h
 
 const categories: { id: Category; label: string }[] = [
   { id: 'weddings', label: 'Weddings' },
-  { id: 'proposals', label: 'Proposals' },
+  // { id: 'proposals', label: 'Proposals' },
   { id: 'portraits', label: 'Portraits' },
   { id: 'commercial', label: 'Commercial' },
   { id: 'corporate', label: 'Corporate' },
