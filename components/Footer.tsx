@@ -4,9 +4,9 @@ import { FaInstagram, FaFacebook, FaTiktok, FaPhone, FaEnvelope } from 'react-ic
 import { FaXTwitter } from 'react-icons/fa6';
 
 const socialLinks = [
-  { name: 'Instagram', href: 'https://instagram.com/rhemavisuals', icon: FaInstagram },
+  { name: 'Instagram', href: 'https://www.instagram.com/rhema_visuals_ltd', icon: FaInstagram },
   { name: 'Facebook', href: 'https://facebook.com/rhemavisuals', icon: FaFacebook },
-  { name: 'TikTok', href: 'https://tiktok.com/@rhemavisuals', icon: FaTiktok },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@rhemavisuals1', icon: FaTiktok },
   { name: 'X (Twitter)', href: 'https://twitter.com/rhemavisuals', icon: FaXTwitter },
 ];
 

@@ -11,6 +11,11 @@ const photos = [
   { src: '/images/gallery/Kukyaala/kukyaala (11).jpg', alt: 'Product photography', width: 800, height: 1000 },
   { src: '/images/gallery/Wedding/wedding (6).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
   { src: '/images/gallery/Wedding/wedding (8).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
+  { src: '/images/gallery/Wedding/wedding (25).jpg', alt: 'Product photography', width: 800, height: 1000 },
+  { src: '/images/gallery/Wedding/wedding (23).jpg', alt: 'Product photography', width: 800, height: 1000 },
+  { src: '/images/gallery/Wedding/wedding (26).jpg', alt: 'Product photography', width: 800, height: 1000 },
+  { src: '/images/gallery/Wedding/wedding (27).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
+  { src: '/images/gallery/Wedding/wedding (30).jpg', alt: 'Commercial shoot', width: 1600, height: 900 },
   { src: '/images/gallery/Kukyaala/kukyaala (13).jpg', alt: 'Product photography', width: 800, height: 1000 }
 ];
 

@@ -1,14 +1,16 @@
-/* components/Slider.tsx */
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 
+// Array updated to 5 images
 const heroImages = [
   '/images/hero/hero (1).jpg',
   '/images/hero/hero (2).jpg',
   '/images/hero/hero (3).jpg',
+  '/images/hero/hero (4).jpg',
+  '/images/hero/hero (5).jpg',
 ];
 
 export default function Slider() {
@@ -29,7 +31,6 @@ export default function Slider() {
   useEffect(() => {
     if (!emblaApi) return;
     
-    // Listen for slide selection changes
     onSelect();
     emblaApi.on('select', onSelect);
     emblaApi.on('reInit', onSelect);
@@ -46,6 +47,7 @@ export default function Slider() {
       <div className="overflow-hidden shadow-2xl" ref={emblaRef}>
         <div className="flex">
           {heroImages.map((src, idx) => (
+            /* Maintained your original responsive vh heights */
             <div key={idx} className="relative flex-[0_0_100%] h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] min-w-0">
               <Image
                 src={src}

@@ -248,7 +248,7 @@ export const allPackages: PackageType[] = [
   // CORPORATE PHOTOSHOOT
   {
     name: "Corporate Essentials",
-    price: 750000,
+    price: 1500000,
     description:
       "Professional headshots and office lifestyle coverage for teams.",
     features: [
