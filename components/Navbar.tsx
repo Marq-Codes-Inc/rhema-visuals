@@ -60,6 +60,9 @@ export default function Navbar() {
 
   // Safe background colour
   const menuBg = theme === 'dark' ? '#1A1A1A' : '#FFFFFF';
+  
+  // Logo filter for dark theme
+  const logoFilter = theme === 'dark' ? 'brightness(0) invert(1)' : 'none';
 
   return (
     <nav className="fixed-nav w-full">
@@ -71,7 +74,8 @@ export default function Navbar() {
               alt="Rhema Visuals"
               width={200}
               height={200}
-              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              className="object-contain transition-all duration-300 group-hover:scale-105"
+              style={{ filter: logoFilter }}
               unoptimized
               priority
             />

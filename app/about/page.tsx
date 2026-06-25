@@ -17,7 +17,7 @@ export default function AboutPage() {
         </div>
 
         {/* CEO Section */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
           <div className="md:col-span-3 prose prose-invert prose-lg text-secondary space-y-4 leading-relaxed">
             <p>
               Hi, I’m <strong className="text-brand-black">Rehema Namaganda</strong> the heart and eyes behind Rhema Visuals. 
@@ -38,9 +38,19 @@ export default function AboutPage() {
               to finish, or simply soaking up time with the people I love most. I can’t wait to meet you and create something beautiful together.
             </p>
           </div>
-          <div className="md:col-span-2 flex justify-center">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-brand-orange shadow-lg">
-              <Image src={rehemahImg} alt="Rehemah" fill className="object-cover" />
+          
+          {/* Formal Editorial Image Frame */}
+          <div className="md:col-span-2 flex justify-center md:justify-end">
+            <div className="relative w-full max-w-70 aspect-4/5 bg-card border border-subtle p-2.5 shadow-xl">
+              <div className="relative w-full h-full overflow-hidden border border-brand-orange/40">
+                <Image 
+                  src={rehemahImg} 
+                  alt="Rehema Namaganda" 
+                  fill 
+                  className="object-cover"
+                  priority 
+                />
+              </div>
             </div>
           </div>
         </div>

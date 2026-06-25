@@ -69,11 +69,16 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <ScrollToTop />
-          <WhatsAppIcon />
+          {/* Right side: WhatsApp above Scroll to Top */}
+          <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3">
+            <WhatsAppIcon />
+            <ScrollToTop />
+          </div>
+          {/* Right side but higher: Category scroll buttons */}
           <CategoryScrollButtons />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+

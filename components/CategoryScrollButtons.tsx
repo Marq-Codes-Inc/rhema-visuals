@@ -51,7 +51,7 @@ export default function CategoryScrollButtons() {
   if (pathname !== "/packages") return null;
 
   return (
-    <div className="fixed bottom-24 right-8 z-9999 isolation-auto">
+    <div className="fixed bottom-32 right-16 z-50 isolation-auto">
       <div ref={menuRef} className="relative flex flex-col items-end">
         
         {/* Floating Category List */}
